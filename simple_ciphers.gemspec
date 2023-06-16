@@ -8,17 +8,25 @@ Gem::Specification.new do |spec|
   spec.authors = ["Kuba Jasko"]
   spec.email = ["kubajasko@hotmail.co.uk"]
 
-  spec.summary = "TODO: Write a short summary, because RubyGems requires one."
-  spec.description = "TODO: Write a longer description or delete this line."
-  spec.homepage = "TODO: Put your gem's website or public repo URL here."
+  spec.summary = "This gem allows you to encode, decode and brute force basic ciphers"
+  spec.description = <<DESCRIPTION
+    This gem should not be used for production-grade security as the ciphers it implements are very basic.
+    It will let you encode, decode and brute force ciphers.
+    The brute force will only work if you have enough encoded text.
+
+    Currently the ciphers that are available are:
+      - Caesar Cipher
+      - Monoalphabetic Cipher
+DESCRIPTION
+  spec.homepage = "https://github.com/BaukJ/simple_ciphers"
   spec.license = "MIT"
   spec.required_ruby_version = ">= 2.6.0"
 
   spec.metadata["allowed_push_host"] = "TODO: Set to your gem server 'https://example.com'"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/BaukJ/simple_ciphers"
+  #spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
